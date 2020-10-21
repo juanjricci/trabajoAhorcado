@@ -2,7 +2,8 @@ language: python
 python:
     - "3.6"
 script:
-    - coverage run [test_ahorcado.py, test_partida.py]
+    - py.test
+    
 install:
     - pip install -r requirements.txt
 
