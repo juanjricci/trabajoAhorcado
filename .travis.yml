@@ -2,7 +2,7 @@ language: python
 python:
     - "3.6"
 script:
-    - coverage run test_suite.py
+    - coverage run --omit '/home/travis/virtualenv/python3.8.0/lib/*' -m unittest
 
 install:
     - pip install -r requirements.txt
