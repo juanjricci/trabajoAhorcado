@@ -8,8 +8,8 @@ def suite():
         Gather all the tests from this module in a test suite.
     """
     test_suite = unittest.TestSuite()
-    test_suite.addTest(unittest.makeSuite(Test1))
-    test_suite.addTest(unittest.makeSuite(Test2))
+    test_suite.addTest(unittest.makeSuite(TestAhorcado))
+    test_suite.addTest(unittest.makeSuite(TestPartida))
     return test_suite
 
 if __name__ == "__main__":
