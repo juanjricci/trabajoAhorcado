@@ -2,6 +2,7 @@ from partida import Partida
 from servicesPartidas import ServicesPartidas
 from repositorios import Repositorios
 import random
+import os
 
 
 class Ahorcado():
@@ -60,6 +61,7 @@ class Ahorcado():
             palabra_adivinar1, dificultad1*len(palabra_adivinar1),
             tipo_palabra_adivinar1, nombre1
             )
+        os.system('clear')
         while partida1._intentos > 0:
             print('Palabra a adivinar: ', partida1._palabra_aciertos)
             print('Pista: ', partida1._tipo_palabra)
@@ -105,6 +107,7 @@ class Ahorcado():
             palabra_adivinar2, dificultad2*len(palabra_adivinar2),
             tipo_palabra_adivinar2, nombre2
             )
+        os.system('clear')
         while partida2._intentos > 0:
             print('Palabra a adivinar: ', partida2._palabra_aciertos)
             print('Pista: ', partida2._tipo_palabra)
