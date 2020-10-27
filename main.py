@@ -1,5 +1,3 @@
-from servicesPartidas import ServicesPartidas
-from partida import Partida
 from ahorcado import Ahorcado
 from menu import Menu
 from repositorios import Repositorios

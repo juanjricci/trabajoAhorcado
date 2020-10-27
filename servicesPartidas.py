@@ -2,6 +2,7 @@ from partida import Partida
 from repositorios import Repositorios
 import random
 
+
 class ServicesPartidas():
 
     def iniciar_partida(self, nombre, dificultad, palabra, tipo_palabra):
@@ -26,7 +27,7 @@ class ServicesPartidas():
         if letra in partida._palabra:
             for i in range(len(partida._palabra)):
                 if letra == partida._palabra[i]:
-                        partida._palabra_aciertos[i] = partida._palabra[i]
+                    partida._palabra_aciertos[i] = partida._palabra[i]
         partida._intentos = partida._intentos - 1
         if partida._intentos < 0:
             raise(ValueError)
